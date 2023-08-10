@@ -5,9 +5,11 @@ import {CodeBlock} from "../CodeBlock";
 
 import * as style from "./style.module.scss";
 
-const code = `import * as React from "react";
+const codeJSX = `import * as React from "react";
 import {useStaticQuery, graphql} from "gatsby";
 import BackgroundImage from "gatsby-background-image";
+
+import "./style.css";
 
 export const GatsbyBackgroundImage = () => {
 	const data = useStaticQuery(graphql\`
@@ -25,12 +27,15 @@ export const GatsbyBackgroundImage = () => {
 	const image = data.file.childImageSharp.fluid;
 
 	return (
-        <BackgroundImage
-            Tag="div"
-            fluid={image}>
-        </BackgroundImage>
+		return <BackgroundImage className="background-image" fluid={image}></BackgroundImage>;
 	);
 };`;
+
+const codeCSS = `/* style.css */
+
+.background-image {
+	aspect-ratio: 16/9;
+}`;
 
 export const GatsbyBackgroundImage = () => {
 	const data = useStaticQuery(graphql`
@@ -55,7 +60,10 @@ export const GatsbyBackgroundImage = () => {
 			</h2>
 			<div className="editor">
 				<BackgroundImage Tag="div" className={style.backgroundImage} fluid={image}></BackgroundImage>
-				<CodeBlock language="jsx">{code}</CodeBlock>
+				<h3>JSX</h3>
+				<CodeBlock language="jsx">{codeJSX}</CodeBlock>
+				<h3>CSS</h3>
+				<CodeBlock language="css">{codeCSS}</CodeBlock>
 			</div>
 		</section>
 	);

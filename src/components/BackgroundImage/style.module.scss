@@ -1,8 +1,15 @@
-.image {
-	width: 100%;
+.banner {
+	background-image: url("@assets/images/forest-800.jpg");
+
 	aspect-ratio: 16/9;
-	background-image: url("@assets/images/forest.jpg");
+
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+@media (max-width: 500px) {
+	.banner {
+		background-image: url("@assets/images/forest-400.jpg");
+	}
 }

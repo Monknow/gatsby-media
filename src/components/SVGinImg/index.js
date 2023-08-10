@@ -1,16 +1,14 @@
 import * as React from "react";
 import {CodeBlock} from "@components/CodeBlock";
-import Picture from "@assets/svg/picture.svg";
+import picture from "@assets/svg/picture.svg";
 
 import * as styles from "./style.module.scss";
 
 const code = `import * as React from "react";
-import PictureIcon from "./assets/svg/picture.svg";
+import picture from "./assets/svg/picture.svg";
 
 const SVGinImg = () => {
-	return (
-		<img src={PictureIcon} alt="Picture icon"/>
-	);
+	return <img src={picture} alt="Picture" />;
 };`;
 
 export const SVGinImg = () => {
@@ -20,7 +18,7 @@ export const SVGinImg = () => {
 				SVG using <code>img</code> tag
 			</h2>
 			<div className="editor">
-				<img src={Picture} className={styles.svg} alt="Picture icon" />
+				<img src={picture} className={styles.svg} alt="Picture" />
 				<CodeBlock language="javascript">{code}</CodeBlock>
 			</div>
 		</section>
