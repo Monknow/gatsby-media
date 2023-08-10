@@ -35,12 +35,12 @@ function useOutsideAlerter(ref) {
 	return {menuOpen, setMenuOpen};
 }
 
-export const NavBar = () => {
+export const Navigation = () => {
 	const wrapperRef = useRef(null);
 	const {menuOpen, setMenuOpen} = useOutsideAlerter(wrapperRef);
 
 	return (
-		<nav className={styles.NavBar} ref={wrapperRef}>
+		<nav className={styles.navbar} ref={wrapperRef}>
 			<Link to="/">Home</Link>
 			<div className={styles.icon}>
 				<input

@@ -1,12 +1,12 @@
 import * as React from "react";
 import "./style.scss";
 import "@assets/fonts/fonts.css";
-import {NavBar} from "../NavBar";
+import {Navigation} from "@components/Navigation";
 
 export const Layout = ({children}) => {
 	return (
 		<div>
-			<NavBar />
+			<Navigation />
 			{children}
 		</div>
 	);
