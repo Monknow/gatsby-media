@@ -1,0 +1,53 @@
+.document {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: clamp(200px, 40vw, 450px);
+}
+
+.page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: clamp(200px, 40vw, 450px);
+	aspect-ratio: 0.7;
+	background-color: #2f2f2f !important;
+
+	border-radius: 10px;
+
+	& > * {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		border-radius: 10px;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+.currentPage {
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid rgba(25, 118, 210, 0.5);
+}
+
+.openPDF {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+	color: white;
+
+	svg {
+		margin-left: 5px;
+		height: 25px;
+		width: 25px;
+	}
+}

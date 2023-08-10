@@ -1,0 +1,11 @@
+.markdown {
+	img {
+		width: max(60%, 500px);
+		aspect-ratio: 16/9;
+	}
+
+	& > * {
+		margin: 30px 0px;
+		padding: 0;
+	}
+}

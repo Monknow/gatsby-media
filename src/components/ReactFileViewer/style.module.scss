@@ -1,0 +1,36 @@
+.pdf {
+	height: clamp(200px, 40vw, 450px);
+
+	canvas {
+		height: clamp(200px, 40vw, 450px);
+	}
+}
+
+.docx {
+	color: #000;
+	height: min(90vw, 500px);
+	width: min(90vw, 350px);
+
+	* {
+		width: 100% !important;
+		box-sizing: border-box;
+	}
+
+	p {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+}
+
+.xlsx {
+	width: 100%;
+	height: min(90vw, 500px);
+
+	color: #000;
+
+	font-size: 0.8rem;
+
+	.pg-viewer-wrapper {
+		overflow-y: hidden;
+	}
+}

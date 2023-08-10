@@ -1,24 +1,56 @@
 {
-  "name": "gatsby-headaches-media",
-  "version": "1.0.0",
-  "private": true,
-  "description": "gatsby-headaches-media",
-  "author": "Juan",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-sass": "^6.11.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.63.6"
-  }
+	"name": "gatsby-headaches-media",
+	"version": "1.0.0",
+	"private": true,
+	"description": "gatsby-headaches-media",
+	"author": "Juan",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.14.1",
+		"@react-pdf-viewer/core": "^3.12.0",
+		"@react-pdf-viewer/default-layout": "^3.12.0",
+		"@react-three/drei": "^9.80.0",
+		"@uiw/react-md-editor": "^3.23.4",
+		"gatsby": "^5.11.0",
+		"gatsby-background-image": "^1.6.0",
+		"gatsby-plugin-alias-imports": "^1.0.5",
+		"gatsby-plugin-image": "^3.11.0",
+		"gatsby-plugin-react-svg": "^3.3.0",
+		"gatsby-plugin-sass": "^6.11.0",
+		"gatsby-plugin-sharp": "^5.11.0",
+		"gatsby-source-filesystem": "^5.11.0",
+		"gatsby-transformer-remark": "^6.11.0",
+		"gatsby-transformer-sharp": "^5.11.0",
+		"i": "^0.3.7",
+		"markdown-to-jsx": "^7.2.1",
+		"npm": "^9.8.1",
+		"pdfjs-dist": "^3.4.120",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-file-viewer": "^1.2.1",
+		"react-markdown": "^8.0.7",
+		"react-pdf": "^7.3.0",
+		"react-pdf-viewer": "^0.1.0",
+		"react-svg": "^16.1.19",
+		"react-syntax-highlighter": "^15.5.0",
+		"react-three-fiber": "^6.0.13",
+		"sass": "^1.63.6",
+		"three": "^0.155.0"
+	},
+	"devDependencies": {
+		"file-loader": "^6.2.0",
+		"node-loader": "^2.0.0",
+		"url-loader": "^4.1.1"
+	}
 }
